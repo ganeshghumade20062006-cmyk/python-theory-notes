@@ -371,3 +371,208 @@ print(a)
 4
 5
 # ..........
+# What are strings?
+# In python, anything that you enclose between single or double quotation marks is considered a string. A string is essentially a sequence or array of textual data. Strings are used when working with Unicode characters.
+
+# Example
+name = "Ganesh"
+print("Hello, " + name)
+# Output
+# Hello, Ganesh
+# Note: It does not matter whether you enclose your strings in single or double quotes, the output remains the same.
+
+# Sometimes, the user might need to put quotation marks in between the strings. Example, consider the sentence: He said, “I want to eat an apple”.
+
+# How will you print this statement in python?: He said, "I want to eat an apple". We will definitely use single quotes for our convenience
+
+print('He said, "I want to eat an apple".')
+
+apple = "he said, \"I want to eat an apple"
+print(apple)
+# he said, "I want to eat an apple
+
+1.
+name="ganesh"
+friend="yash"
+sister="gauri"
+
+
+print("hello," + name)
+print("hello + friend")
+print("hello + sisiter")
+# hello,ganesh
+# hello + friend
+# hello + sisiter
+2.
+apple = "he said, \"I want to eat an apple"
+print(apple)
+# he said, "I want to eat an apple
+
+# Multiline Strings
+# If our string has multiple lines, we can create them like this:
+
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+# Lorem ipsum dolor sit amet,
+# consectetur adipiscing elit,
+# sed do eiusmod tempor incididunt
+# ut labore et dolore magna aliqua.
+1.
+banana = """"he said,
+hii ganesh
+i am good
+"i want go to study""" 
+print(banana)
+# "he said,
+# hii ganesh
+# i am good
+# "i want go to study
+
+
+# Accessing Characters of a String
+# In Python, string is like an array of characters. We can access parts of string by using its index which starts from 0.
+# Square brackets can be used to access elements of the string.
+
+print(name[0])
+print(name[1])
+# Looping through the string
+# We can loop through strings using a for loop like this:
+
+for character in name:
+    print(character)
+# Above code prints all the characters in the string name one by one!
+
+name = "GANESH"
+print(name[0])
+print(name[1])
+for character in name:
+    print(character)
+# G
+# A
+# G
+# A
+# N
+# E
+# S
+# H
+# H
+
+1.
+ga="ganesh"
+print(ga[0])
+print(ga[1])
+print(ga[2])
+print(ga[3])
+print(ga[4])
+print(ga[5])
+# note= in ganesh letter there are 6 letter but in pythone g=0 a=1 n=3......
+# the ans is ↓
+# g
+# a
+# n
+# e
+# s
+# h
+# if i print ga[6] then these is error because in ganesh there is nno 6th name
+print("the easy way to write these sequence is ")
+for character in ga:
+    print(character)
+# the ans is also same
+
+# g
+# a
+# n
+# e
+# s
+# h
+# for example 
+
+st=""""hey ia am ganesh,
+wahat is your name,
+hii my name is gauri"
+i am fine"""
+for character in st:
+    print(character)
+    # the ans is ↓
+# h
+# e
+# y
+
+# i
+# a
+
+# a
+# m
+
+# g
+# a
+# n
+# e
+# s
+# h
+# ,
+
+
+# w
+# a
+# h
+# a
+# t
+
+# i
+# s
+
+# y
+# o
+# u
+# r
+
+# n
+# a
+# m
+# e
+# ,
+
+
+# h
+# i
+# i
+
+# m
+# y
+
+# n
+# a
+# m
+# e
+
+# i
+# s
+
+# g
+# a
+# u
+# r
+# i
+# "
+
+
+# i
+
+# a
+# m
+
+# f
+# i
+# n
+# e
+1
+2
+3
+4
+5
+# ..........
+
