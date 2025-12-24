@@ -575,4 +575,120 @@ for character in st:
 4
 5
 # ..........
+# String Slicing & Operations on String
+# Length of a String
+# We can find the length of a string using len() function.
 
+# Example:
+fruit = "Mango"
+len1 = len(fruit)
+print("Mango is a", len1, "letter word.")
+# Output:
+# Mango is a 5 letter word.
+
+
+# String as an array
+# A string is essentially a sequence of characters also called an array. Thus we can access the elements of this array.
+
+# Example:
+pie = "ApplePie"
+print(pie[:5])
+print(pie[6])	#returns character at specified index
+# Output:
+# Apple
+# i
+# Note: This method of specifying the start and end index to specify a part of a string is called slicing.
+
+1.
+names="ganesh, ghumade"
+print(names[0:6])
+# note= pythone treats variable or spling as a 0 first 
+# means here name= ganesh so g=0 a=1 n=2 e=3 s4 h=5
+#the last number minus(-) 1 
+# means here [0:6] last number is 6  then minus 1 [6-1=5]
+# means five word count including 0
+# output of above code is= ganesh
+# 
+print("take it anoother exampe ")
+name="ghumade, ganesh"
+print(name[0:7])
+# the output of above code is ghumade
+print(name[0:5])
+#  the output of above code is ghuma
+
+2.
+names="ganesh, ghumade"
+print(len(names))
+# output=15 [here counting starts from 0 and also consider cuma(,) and paragraphs ]
+
+
+fruit = "mango"
+len1 = len(fruit)
+print("mango is a", len1, "letter word.")
+# output of above code= mango is a 5 letter word.
+
+# Slicing Example:
+# pie = "ApplePie"
+print(pie[:5])      #Slicing from Start
+print(pie[5:])      #Slicing till End
+print(pie[2:6])     #Slicing in between
+print(pie[-8:])     #Slicing using negative index
+# Output:
+# Apple
+# Pie
+# pleP
+# ApplePie
+# Loop through a String:
+# Strings are arrays and arrays are iterable. Thus we can loop through strings.
+
+# Example:
+alphabets = "ABCDE"
+for i in alphabets:
+    print(i)
+# Output:
+# A
+# B
+# C
+# D
+# E
+
+1.
+fruits="mango"
+print(fruits[0:4])
+# output= mang
+print(fruits[1:4])
+# output = ang 
+# output is ang beacuase he letter "mango" start from [1:4] a and end with g
+# [1:4]👉🏻starting with 1 end with 3 (n-1) (n=4) [4-1=3]
+# 0=m 1=a 2=n 3=g 4=o 
+print(fruits[:5])
+# 👆🏻 here 0 is not written but pythone automatically written 0  in code or output
+# then the output of above code is mango
+
+
+print(fruits[0:-3])
+# here total number in letter mango is 5 
+# [0:-3]= 5 (-3)=2 ==== [0:2] 👉🏻 n-1 [0::1]
+# output of above code is ma 
+print("or 👆🏻")
+print(fruits[0:len(fruits)-3])
+# the output is ma
+
+print(fruits[-3:-1])
+# the solution of above is 
+# [-3:-1] (5-3=2) (5-1=4  main[2:4]===but n-1= 3) so variabe statrs from 2 and end in 3
+# the solution od above code= ng 
+nm="harry"
+print(nm[-4:-2])
+
+nm="harry"
+print(nm[-4:-2])
+# [1:3]
+# [1:2]
+# ar output of above code 
+1
+2
+3
+4
+5
+# ..........
