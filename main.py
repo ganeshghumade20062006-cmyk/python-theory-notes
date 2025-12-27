@@ -692,3 +692,441 @@ print(nm[-4:-2])
 4
 5
 # ..........
+# String methods
+# day 13 is littel bit more 
+# so  it converts in type
+
+# Python provides a set of built-in methods that we can use to alter and modify the strings.
+
+# 1.upper() :
+# The upper() method converts a string to upper case.
+
+# Example:
+str1 = "AbcDEfghIJ"
+print(str1.upper())
+# Output:
+# ABCDEFGHIJ
+
+1.
+# type 1 upper (letter become capital) lower (letters become small)
+
+a="Ganesh"
+print(len(a))
+print(a.upper())
+# output= GANESH
+
+print(a.lower()) 
+# output=ganesh
+
+# 2.lower()
+# The lower() method converts a string to lower case.
+
+# Example:
+str1 = "AbcDEfghIJ"
+print(str1.lower())
+# Output:
+# abcdefghij
+
+# 3.strip() :
+# The strip() method removes any white spaces before and after the string.
+
+# Example:
+str2 = " Silver Spoon "
+print(str2.strip)
+# Output:
+# Silver Spoon
+
+# 4.rstrip() :
+# the rstrip() removes any trailing characters. Example:
+
+str3 = "Hello !!!"
+print(str3.rstrip("!"))
+# Output:
+# Hello
+
+# type 2 rstrip (?)
+
+b="!!!!!Ganesh!!!!!!!"
+print(b.rstrip("!"))
+# output !!!!!Ganesh
+
+# 4.replace() :
+# The replace() method replaces all occurences of a string with another string. Example:
+
+str2 = "Silver Spoon"
+print(str2.replace("Sp", "M"))
+# Output:
+# Silver Moon
+
+# type 4 replace (replace word)
+c="ganesh ghumade"
+print(c.replace("ganesh ", "vaishali "))
+# output = vaishali ghumade
+g="ganeshh ganesh ghumade ganeshh"
+print(g.replace("ganesh", "harshall"))
+# output= harshallh harshall ghumade harshallh
+
+# 5.split() :
+# The split() method splits the given string at the specified instance and returns the separated strings as list items.
+
+# Example:
+str2 = "Silver Spoon"
+print(str2.split(" "))      #Splits the string at the whitespace " ".
+# Output:
+# ['Silver', 'Spoon']
+# There are various other string methods that we can use to modify our strings.
+
+
+# type 5 split (split the word)
+
+g="ganeshh ganesh ghumade ganeshh"
+print(g.split(" "))
+# output= ['ganeshh', 'ganesh', 'ghumade', 'ganeshh']
+
+
+# 6.capitalize() :
+# The capitalize() method turns only the first character of the string to uppercase and the rest other characters of the string are turned to lowercase. The string has no effect if the first character is already uppercase.
+
+# Example:
+str1 = "hello"
+capStr1 = str1.capitalize()
+print(capStr1)
+str2 = "hello WorlD"
+capStr2 = str2.capitalize()
+print(capStr2)
+# Output:
+# Hello
+# Hello world
+
+# type 6 capitalize (letter capital 1st one )
+
+h="introduction to pythone"
+print(h.capitalize())
+# output= Introduction to pythone
+bloghead="introduction to c"
+print(bloghead.capitalize())
+# output= Introduction to c
+
+bloghead="introDucTion to c"
+print(bloghead.capitalize())
+# output= Introduction to c
+
+
+7.
+# center() :
+# The center() method aligns the string to the center as per the parameters given by the user.
+
+# Example:
+str1 = "Welcome to the Console!!!"
+print(str1.center(50))
+# Output:
+#             Welcome to the Console!!!
+# We can also provide padding character. It will fill the rest of the fill characters provided by the user.
+
+# Example:
+# str1 = "Welcome to the Console!!!"
+# print(str1.center(50, "."))
+# Output:
+# ............Welcome to the Console!!!.............
+
+# type 7 centre (centre space)
+
+str1 = "welcome to home !!!!!"
+print(str1. center(25))
+# output=   welcome to home !!!!!
+str2 = "welcome to home !!!!!"
+print(str2. center(50))
+# output=               welcome to home !!!!!
+print(len(str2))
+# output= 21
+
+bb = "ganesh" , "ganesh", "mooreshwar", "ghumade"
+print(bb.count("ganesh"))
+# output= 2
+gg= "ghumade", "mooreshwr", "vaishali", "vaishali", "vaishali", "vaishali"
+print(gg.count("vaishali"))
+# 4 output
+gg= "ghumade", "mooreshwr", "vaishali", "vaishali", "vaishali", "vaishali"
+print(gg.count("vaishalii"))
+# output= 0
+
+
+# 8.count() :
+# The count() method returns the number of times the given value has occurred within the given string.
+
+# Example:
+str2 = "Abracadabra"
+countStr = str2.count("a")
+print(countStr)
+# Output:
+# 4
+
+
+# 9.endswith() :
+# The endswith() method checks if the string ends with a given value. If yes then return True, else return False.
+
+# Example :
+str1 = "Welcome to the Console !!!"
+print(str1.endswith("!!!"))
+# Output:
+# True
+# We can even also check for a value in-between the string by providing start and end index positions.
+
+# Example:
+str1 = "Welcome to the Console !!!"
+print(str1.endswith("to", 4, 10))
+# Output:
+# True
+
+# type 9     endswith (identify endswith that leter in tht word)
+# if word end with that letter then it is true otherwise false
+
+
+jj="welcome to the homes !!!"
+print(jj.endswith("!!!"))
+# output = true
+jj="welcome to the homes !!!"
+print(jj.endswith("."))
+# output = false 
+str1="welcome to the consol !!!"
+print(str1.endswith("to", 4, 10))
+# output = true 
+str1="welcome to the consol !!!"
+print(str1.endswith("to", 4, 10))
+# output= true
+str2="welcome to the consol !!!"
+print(str2.endswith("to", 4, 8))
+# output= false 
+
+# 10.find() :
+# The find() method searches for the first occurrence of the given value and returns the index where it is present. If given value is absent from the string then return -1.
+
+# Example:
+str1 = "He's name is Dan. He is an honest man."
+print(str1.find("is"))
+# Output:
+# 10
+# As we can see, this method is somewhat similar to the index() method. The major difference being that index() raises an exception if value is absent whereas find() does not.
+
+# Example:
+str1 = "He's name is Dan. He is an honest man."
+print(str1.find("Daniel"))
+# Output:
+# -1
+
+# type 10 find (fins the word)
+
+dd="he's name is ganesh. He is an honest man."
+print(dd.find("is"))
+# here the output is the length of the number which is to find out 
+# if the number is not exist at find out then output is -1
+
+dd="he's name is ganesh. He is an honest man."
+print(dd.find("iss"))
+# output= -1
+
+# 11.index() :
+# The index() method searches for the first occurrence of the given value and returns the index where it is present. If given value is absent from the string then raise an exception.
+
+# Example:
+str1 = "He's name is Dan. Dan is an honest man."
+print(str1.index("Dan"))
+# Output:
+# 13
+# As we can see, this method is somewhat similar to the find() method. The major difference being that index() raises an exception if value is absent whereas find() does not.
+
+# Example:
+str1 = "He's name is Dan. Dan is an honest man."
+print(str1.index("Daniel"))
+# Output:
+# ValueError: substring not found
+
+
+# 12.isalnum() :
+# The isalnum() method returns True only if the entire string only consists of A-Z, a-z, 0-9. If any other characters or punctuations are present, then it returns False.
+
+# Example 1:
+str1 = "WelcomeToTheConsole"
+print(str1.isalnum())
+# Output:
+True
+
+# type 12 isalnum (if word consist A-Z, a-z, 0-9) then output is true
+ii="WelcomeToTheConsole"
+print(ii.isalnum())
+# output= true
+
+# 13.isalpha() :
+# The isalnum() method returns True only if the entire string only consists of A-Z, a-z. If any other characters or punctuations or numbers(0-9) are present, then it returns False.
+
+# Example :
+str1 = "Welcome"
+print(str1.isalpha())
+# Output:
+# True
+
+# type 13 isalpha (if word consist of A-Z, a-z) then then output is true
+# any number is come at this then it show false  
+ll="welcome"
+print(ll.isalpha())
+# output= true
+ll="welcome11"
+print(ll.isalpha())
+# output= false 
+
+# 14.islower() :
+# The islower() method returns True if all the characters in the string are lower case, else it returns False.
+
+# Example:
+str1 = "hello world"
+print(str1.islower())
+# Output:
+# True
+
+# type 14 islower (the character is in string is lower case then it is true other wise false)
+oo="hellow world"
+print(oo.islower())
+# output= true
+kk="Ganesh ghumade"
+print(kk.islower())
+# output= false
+
+# 15.isprintable() :
+# The isprintable() method returns True if all the values within the given string are printable, if not, then return False.
+
+# Example :
+str1 = "We wish you a Merry Christmas"
+print(str1.isprintable())
+# Output:
+# True
+
+# type 15 isprintable (if all value are in string are printible then it show true )
+# if not then output is false
+uu="we wish you a ganesh"
+print(uu.isprintable())
+# output= true
+u="we wish you a ganesh\n"
+print(u.isprintable())
+# \n is not the printible example 👇🏻
+i="ganesh\nghumade"
+print(i)
+# output=ganesh
+#        ghumade
+# that's why the output of lline nummber 493 and 494 iis false
+
+# 16.isspace() :
+# The isspace() method returns True only and only if the string contains white spaces, else returns False.
+
+# Example:
+str1 = "        "       #using Spacebar
+print(str1.isspace())
+str2 = "        "       #using Tab
+print(str2.isspace())
+# Output:
+True
+True
+
+# type 16 isspace (the method return true and only if the string contains white spaces, else return false)
+
+tt="       "  
+print(tt.isspace())
+# output= true 
+t="  "  
+print(t.isspace())
+# output= true
+
+# 17.istitle() :
+# The istitile() returns True only if the first letter of each word of the string is capitalized, else it returns False.
+
+# Example:
+str1 = "World Health Organization" 
+print(str1.istitle())
+# Output:
+True
+# Example:
+str2 = "To kill a Mocking bird"
+print(str2.istitle())
+# Output:
+False
+
+# type 17 istitle (the first letter of each word of the string is capital then it iis true otherwie false)
+mm="Ganesh Moreshwar Ghumade"
+print(mm.istitle())
+# output = true
+m="ganesh Moreshwar Ghumade"
+print(m.istitle())
+# output= false
+
+
+
+# 18.isupper() :
+# The isupper() method returns True if all the characters in the string are upper case, else it returns False.
+
+# Example :
+str1 = "WORLD HEALTH ORGANIZATION" 
+print(str1.isupper())
+# Output:
+True
+
+# type 18 isupper (all character in string is in upper case then it is true otherwise false )
+tl="GANESH GHUMADE"
+print(tl.isupper())
+# output= true
+tll="GANESH GHUMaDE"
+print(tll.isupper())
+# output= false
+
+# 19.startswith() :
+# The endswith() method checks if the string starts with a given value. If yes then return True, else return False.
+
+# Example :
+str1 = "Python is a Interpreted Language" 
+print(str1.startswith("Python"))
+# Output:
+True
+
+# type 19 startswith (this method check if the string starts with a given valu)
+oio="pythone is good coding language"
+print(oio.startswith("pythone"))
+# output= true
+opo="pythone is good coding language"
+print(opo.startswith("pythone."))
+# output= false
+
+# 20.swapcase() :
+# The swapcase() method changes the character casing of the string. Upper case are converted to lower case and lower case to upper case.
+
+# Example:
+str1 = "Python is a Interpreted Language" 
+print(str1.swapcase())
+# Output:
+# pYTHON IS A iNTERPRETED lANGUAGE
+
+
+# type 20 swapcase (this method change the string into upper case to loower case and lower caseto upper case)
+w="Hii my name is ganeshh"
+print(w.swapcase())
+# output= hII MY NAME IS GANESHH
+
+
+# 21.title() :
+# The title() method capitalizes each letter of the word within the string.
+
+# Example:
+str1 = "He's name is Dan. Dan is an honest man."
+print(str1.title())
+# Output:
+# He'S Name Is Dan. Dan Is An Honest Man.
+
+# type  21 title ( in this mehode capital each letter of the word within the string)
+y="He's name is ganeshh. Ganeshh is a good"
+print(y.title())
+# output= He'S Name Is Ganeshh. Ganeshh Is A Good
+1
+2
+3
+4
+5
+# ...........
+
+
