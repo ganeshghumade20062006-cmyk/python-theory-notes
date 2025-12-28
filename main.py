@@ -1128,5 +1128,273 @@ print(y.title())
 4
 5
 # ...........
+# if-else Statements
 
+# Working of an elif statement
+# Execute the block of code inside if statement if the initial expression evaluates to True. After execution return to the code out of the if block.
+
+# Execute the block of code inside the first elif statement if the expression inside it evaluates True. After execution return to the code out of the if block.
+
+# Execute the block of code inside the second elif statement if the expression inside it evaluates True. After execution return to the code out of the if block.
+# .
+# .
+# .
+# Execute the block of code inside the nth elif statement if the expression inside it evaluates True. After execution return to the code out of the if block.
+
+# Execute the block of code inside else statement if none of the expression evaluates to True. After execution return to the code out of the if block.
+
+
+# Sometimes the programmer needs to check the evaluation of certain expression(s), whether the expression(s) evaluate to True or False. If the expression evaluates to False, then the program execution follows a different path than it would have if the expression had evaluated to True.
+
+# Based on this, the conditional statements are further classified into following types:
+
+# if
+# if-else
+# if-else-elif
+# nested if-else-elif.
+# An if……else statement evaluates like this:
+# if the expression evaluates True:
+# Execute the block of code inside if statement. After execution return to the code out of the if……else block.\
+
+# if the expression evaluates False:
+# Execute the block of code inside else statement. After execution return to the code out of the if……else block.
+
+# 1st example of if-else statement
+
+a= int(input("enter your age:"))
+print("your age is:",a)
+if(a>18):
+    print("you can drive")
+
+else:
+    print("you cannot drive")  
+
+#output= enter your age:20
+# your age is: 20
+# you can drive  
+a= int(input("enter your age:"))
+print("your age is:",a)
+if(a>18):
+    print("you can drive")
+
+else:
+    print("you cannot drive") 
+
+# output= enter your age:15
+# your age is: 15
+# you cannot drive
+
+# note= conditional operator
+# > (greater than)
+# < (less than)
+# >= (greater than or equal to)
+# <= (less than or equal to)
+# == (equal to)
+# != (not equal to)
+
+# print(a>18)
+# print(a<18)
+# print(a>=18)
+# print(a<=18)
+# print(a==18)
+# print(a!=18)
+
+# 2nd example of if-else statement
+
+applePrice = 210
+budget = 200
+if (applePrice <= budget):
+    print("Alexa, add 1 kg Apples to the cart.")
+else:
+    print("Alexa, do not add Apples to the cart.")
+
+# Output:
+# Alexa, do not add Apples to the cart.
+
+# 3rd example of if-else statement
+
+applePrice=10
+budget=200
+if(budget-applePrice>50):
+    print("alexa add 1 kg apple to the cart")
+elif(budget-applePrice>70):  
+    print("its ookk you can buy ")  
+else: 
+    print("alexa do not add apple to the cart")
+    
+# # output= alexa add 1 kg apple to the cart
+
+
+applePrice=10
+budget=200
+if(budget-applePrice>70):
+    print("alexa add 1 kg apple to the cart")
+elif(budget-applePrice>50):  
+    print("its ookk you can buy ")  
+else: 
+    print("alexa do not add apple to the cart")
+
+# output= alexa add 1 kg apple to the cart
+
+
+# 4th example of if-else statement
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+    print("i am happy")  
+
+
+# # output= enter the value of num: 7
+# the number is positive
+# i am happy
+
+
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+    print("i am happy")  
+
+
+ # output=enter the value of num: -8
+# the number is negative
+   
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+    print("i am happy")  
+
+
+#  output= enter the value of num: 0
+# the number is zero
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+    print("i am happy")  
+
+# output= enter the value of num: 999
+# the number is special 
+
+
+#if 10th line of my statement of string num (print("i am happy")) is in else, elif and if string or command  
+# if i write this line sepreate means not line of else then every outout it show i am happy
+
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+print("i am happy") 
+
+
+# # output= enter the value of num: 7
+# the number is positive
+# i am happy
+
+
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+print("i am happy")   
+
+
+ # output=enter the value of num: -8
+# the number is negative
+# i am happy   
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+print("i am happy")     
+
+
+#  output= enter the value of num: 0
+# the number is zero
+# i am happy
+
+num= int(input("enter the value of num: "))
+if(num<0):
+    print("the number is negative")
+elif(num==0):
+    print("the number is zero")
+elif(num==999):
+    print("the number is special ")
+else:
+    print("the number is positive")
+print("i am happy")     
+
+# output= enter the value of num: 999
+# the number is special 
+# i am happy
+
+
+
+
+
+# Nested if statements
+# We can use if, if-else, elif statements inside other if statements as well.
+# Example:
+
+num = 18
+if (num < 0):
+    print("Number is negative.")
+elif (num > 0):
+    if (num <= 10):
+        print("Number is between 1-10")
+    elif (num > 10 and num <= 20):
+        print("Number is between 11-20")
+    else:
+        print("Number is greater than 20")
+else:
+    print("Number is zero")
+
+# Output:
+
+# Number is between 11-20
+# ..........
 
