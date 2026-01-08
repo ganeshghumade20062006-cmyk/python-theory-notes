@@ -1671,3 +1671,212 @@ calculateGmean(c,d)
 5
 # ..........
 
+# Function Arguments and return statement
+# There are four types of arguments that we can provide in a function:
+
+# Default Arguments
+# Keyword Arguments
+# Variable length Arguments
+# Required Arguments
+
+
+# Default arguments:
+# We can provide a default value while creating a function. This way the function assumes a default value even if a value is not provided in the function call for that argument.
+print("defaul arguments")
+# Example:
+
+def name(fname, mname = "Jhon", lname = "Whatson"):
+    print("Hello,", fname, mname, lname)
+name("Amy")
+# output=
+# Hello, Amy Jhon Whatson
+# fnmae= front name
+# mname= medal name 
+# lname= last name
+# in this string fnmae is given whhich is amy
+# in output automatically fname and lname is inclide this is callled default arguments
+
+def name(fname, mname = "Jhon", lname = "Whatson"):
+    print("Hello,", fname, mname, lname)
+name("Amy", "agrawal", "jain")
+# output= Hello, Amy agrawal jain
+# in this string fname, mname and lname is given thats why in output name string is copy
+
+def name(fname, mname = "Jhon", lname = "Whatson"):
+    print("Hello,", fname, mname, lname)
+name("Amy", "agrawal",)
+# output= Hello, Amy agrawal Whatson
+# in this string name there are the value of fname and mname but not the value of lname 
+# therefor lnmae is copied from 1st string in output
+
+def name(fname, mname = "Jhon", lname = "Whatson"):
+    print("Hello,", fname, mname, lname)
+name("Amy")
+# ooutput=Hello, Amy Jhon Whatson
+# here in main string there is the only valur of fname but not the value of mname and lname 
+# therefore mname and lname is automatically get copied from 1st string
+
+
+
+
+
+
+# .......
+
+def average(a=9,b=1):
+    print("the average is", (a+b)/2)
+average(b=9)    
+# output=the average is 9.0
+# in that b=1 get ignored and b=9 is get selected
+
+def average(a=9,b=1):
+    print("the average is", (a+b)/2)
+average(a=5)
+# output= the average is 3.0
+# in that a=9 get ignored and a=5 is get selected
+
+def average(a=9,b=1):
+    print("the average is", (a+b)/2)
+average(5)
+# output=the average is 3.0 here a=5 not a=9
+
+def average(a=9,b=1):
+    print("the average is", (a+b)/2)
+average(b=9)
+# output= the average is 9.0 here b=9 not b=1
+
+
+print(" Keyword Arguments")
+# Keyword arguments:
+# We can provide arguments with key = value, this way the interpreter recognizes the arguments by the parameter name. Hence, the the order in which the arguments are passed does not matter.
+# in that arguments there is no limitatiom of sequence like in 5th step b=9 and a= 21
+def average(a=9,b=1):
+    print("the average is", (a+b)/2)
+average(b=9)
+
+average(b=9, a=21)
+
+# output= the average is 9.0
+# the average is 15.0
+def average(a,b,c=1):
+    print("the average is", (a+b+c)/2)
+    average(5,6)
+    # value of c is 1 by default
+    # output=the average is 6.0
+     
+#  from replit
+# Example:
+
+def name(fname, mname, lname):
+    print("Hello,", fname, mname, lname)
+name(mname = "Peter", lname = "Wesker", fname = "Jade")
+
+# Output:
+
+# Hello, Jade Peter Wesker
+
+print("Required arguments")
+# Required arguments:
+# In case we don’t pass the arguments with a key = value syntax, then it is necessary to pass the arguments in the correct positional order and the number of arguments passed should match with actual function definition.
+
+# Example 1: when number of arguments passed does not match to the actual function definition.
+
+# def name(fname, mname, lname):
+#     print("Hello,", fname, mname, lname)
+# name("Peter", "Quill")
+
+# Output:
+
+# name("Peter", "Quill")\
+# TypeError: name() missing 1 required positional argument: 'lname'
+
+# Example 2: when number of arguments passed matches to the actual function definition.
+
+# def name(fname, mname, lname):
+#     print("Hello,", fname, mname, lname)
+# name("Peter", "Ego", "Quill")
+
+# Output:
+
+# Hello, Peter Ego Quill
+
+
+
+
+
+
+
+print("Variable-length arguments:")
+# Variable-length arguments:
+# Sometimes we may need to pass more arguments than those defined in the actual function. This can be done using variable-length arguments.
+
+# There are two ways to achieve this:
+
+# Arbitrary Arguments:
+# While creating a function, pass a * before the parameter name while defining the function. The function accesses the arguments by processing them in the form of tuple.
+
+
+
+def average(*numbers):
+    sum=0
+    for i in numbers:
+        sum=sum+i
+
+    print("average is:", sum/len(numbers))  
+
+average(5,6,7,1)
+# output= average is: 4.75
+
+# replit 
+def name(*name):
+    print("Hello,", name[0], name[1], name[2])
+name("James", "Buchanan", "Barnes")
+
+# Output:
+
+# Hello, James Buchanan Barnes
+
+# Keyword Arbitrary Arguments:
+# While creating a function, pass a * before the parameter name while defining the function. The function accesses the arguments by processing them in the form of dictionary.
+
+# Example:
+
+def name(**name):
+    print("Hello,", name["fname"], name["mname"], name["lname"])
+name(mname = "Buchanan", lname = "Barnes", fname = "James")
+
+# Output:
+
+# Hello, James Buchanan Barnes
+
+print("return Statemen")
+# return Statement
+# The return statement is used to return the value of the expression back to the calling function.
+
+# Example:
+
+def name(fname, mname, lname):
+    return "Hello, " + fname + " " + mname + " " + lname
+print(name("James", "Buchanan", "Barnes"))
+
+# Output:
+
+# Hello, James Buchanan Barnes
+
+
+def average(*numbers):
+    sum=0
+    for i in numbers:
+        sum=sum+i
+    return sum/ len(numbers)
+    
+
+c=average(5,6,7,1)
+print(c)
+# output= average is: 4.75
+1
+2
+3
+4
+5
+# ..........
